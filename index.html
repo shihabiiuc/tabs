@@ -1,82 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <title>Create Tabs using HTML, CSS & JavaScript</title>
-</head>
-<body>
-  <h2 style="text-align: center;">Example 1</h2>
-  <!-- 1ST EXAMPLE (HORIZONTAL) -->
-<div class="tabs-container">
-  <ul class="tab-nav">
-    <li><a href="#tab1" class="active" data-tab="tab1">Aonsectetur</a></li>
-    <li><a href="#tab2" data-tab="tab2">Bignissimos</a></li>
-    <li><a href="#tab3" data-tab="tab3">Cancidunt Elit</a></li>
-    <li><a href="#tab4" data-tab="tab4">Derspiciatis</a></li>
-  </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Create Tabs using HTML, CSS & JavaScript</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">Example 1</h2>
+    <!-- 1ST EXAMPLE (HORIZONTAL) -->
+    <div class="tabs-container">
+      <ul class="tab-nav">
+        <li><a href="#tab1" class="active" data-tab="tab1">Aonsectetur</a></li>
+        <li><a href="#tab2" data-tab="tab2">Bignissimos</a></li>
+        <li><a href="#tab3" data-tab="tab3">Cancidunt Elit</a></li>
+        <li><a href="#tab4" data-tab="tab4">Derspiciatis</a></li>
+      </ul>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="tab1">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nemo amet aperiam deleniti, quidem laboriosam distinctio soluta magnam autem ipsam quas fugit repudiandae, nostrum sed et labore quibusdam dolores sunt.</p>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nemo
+            amet aperiam deleniti, quidem laboriosam distinctio soluta magnam
+            autem ipsam quas fugit repudiandae, nostrum sed et labore quibusdam
+            dolores sunt.
+          </p>
+        </div>
+
+        <div class="tab-pane" id="tab2">
+          <p>
+            Naborum pariatur est voluptatum excepturi commodi labore nihil
+            repudiandae hic! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Possimus placeat earum alias minima rem enim magni sapiente
+            sint praesentium vitae.
+          </p>
+        </div>
+
+        <div class="tab-pane" id="tab3">
+          <p>
+            Itaque laborum quisquam magni et, consequuntur deserunt nesciunt
+            ullam iste modi non, corrupti veniam temporibus sapiente. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eius, doloribus.
+            Eaque explicabo reprehenderit ad.
+          </p>
+        </div>
+
+        <div class="tab-pane" id="tab4">
+          <p>
+            Blanditiis illum assumenda placeat tempora, in expedita sit
+            dignissimos commodi nemo. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Distinctio perferendis modi ut earum quis nostrum
+            quos! Facere, quo.
+          </p>
+        </div>
+      </div>
+      <!-- .tab-content -->
     </div>
+    <!-- .tabs-container -->
 
-    <div class="tab-pane" id="tab2">
-      <p>Naborum pariatur est voluptatum excepturi commodi labore nihil repudiandae hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus placeat earum alias minima rem enim magni sapiente sint praesentium vitae.</p>
+    <h2 style="margin: 70vh 0 20px; text-align: center">Example 2</h2>
+    <!-- 2ND EXAMPLE (VERTICAL) -->
+    <div class="vertical-tabs-container">
+      <div class="v-tab-nav">
+        <ul>
+          <li>
+            <a href="#v-tab1" class="active" data-tab="v-tab1">Aonsectetur</a>
+          </li>
+          <li><a href="#v-tab2" data-tab="v-tab2">Bignissimos</a></li>
+          <li><a href="#v-tab3" data-tab="v-tab3">Cancidunt Elit</a></li>
+          <li><a href="#v-tab4" data-tab="v-tab4">Derspiciatis</a></li>
+        </ul>
+      </div>
+      <!-- .v-tab-nav -->
+      <div class="v-tab-content">
+        <div class="v-tab-pane active" id="v-tab1">
+          <h3>Tab 1 content</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor erat at risus pretium, eget pulvinar enim rhoncus. Etiam
+            laoreet metus et nulla auctor, quis dignissim lacus pellentesque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque id
+            assumenda obcaecati natus quos? Nulla laudantium voluptatum, odio
+            dolor beatae qui perferendis ipsam atque, itaque, quia rem esse
+            voluptate eum.
+          </p>
+        </div>
+        <div class="v-tab-pane" id="v-tab2">
+          <h3>Tab 2 content</h3>
+          <p>
+            Phasellus in tellus consequat, hendrerit nisi eu, molestie nunc.
+            Suspendisse nec ipsum sed mi placerat dapibus id vel purus. Donec in
+            mauris id nulla dignissim euismod.
+          </p>
+        </div>
+        <div class="v-tab-pane" id="v-tab3">
+          <h3>Tab 3 content</h3>
+          <p>
+            Sed vel mi vel eros semper bibendum. Curabitur eget libero non enim
+            blandit aliquam ac ac risus. Ut varius augue vel sollicitudin
+            suscipit.
+          </p>
+        </div>
+        <div class="v-tab-pane" id="v-tab4">
+          <h3>Tab 4 content</h3>
+          <p>
+            Esemper bibendum. Curabitur eget libero non enim blandit aliquam ac
+            ac risus. Ut varius augue vel sollicitudin suscipit.
+          </p>
+        </div>
+      </div>
+      <!-- .v-tab-content -->
     </div>
+    <!-- .vertical-tabs-container -->
 
-    <div class="tab-pane" id="tab3">
-      <p>Itaque laborum quisquam magni et, consequuntur deserunt nesciunt ullam iste modi non, corrupti veniam temporibus sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, doloribus. Eaque explicabo reprehenderit ad.</p>
-    </div>
-
-    <div class="tab-pane" id="tab4">
-      <p>Blanditiis illum assumenda placeat tempora, in expedita sit dignissimos commodi nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio perferendis modi ut earum quis nostrum quos! Facere, quo.</p>
-    </div>
-
-  </div> <!-- .tab-content -->
-</div>  <!-- .tabs-container -->
-
- 
-  <h2 style="margin: 120px 0 20px; text-align: center">Example 2</h2>
-  <!-- 2ND EXAMPLE (VERTICAL) -->
-<div class="vertical-tabs-container">
-  <div class="v-tab-nav">
-    <ul>
-      <li><a href="#v-tab1" class="active" data-tab="v-tab1">Aonsectetur</a></li>
-      <li><a href="#v-tab2" data-tab="v-tab2">Bignissimos</a></li>
-      <li><a href="#v-tab3" data-tab="v-tab3">Cancidunt Elit</a></li>
-      <li><a href="#v-tab4" data-tab="v-tab4">Derspiciatis</a></li>
-    </ul>
-  </div> <!-- .v-tab-nav -->
-  <div class="v-tab-content">
-    <div class="v-tab-pane active" id="v-tab1">
-      <h3>Tab 1 content</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor erat at risus pretium, eget pulvinar enim rhoncus. Etiam laoreet metus et nulla auctor, quis dignissim lacus pellentesque.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque id assumenda obcaecati natus quos? Nulla laudantium voluptatum, odio dolor beatae qui perferendis ipsam atque, itaque, quia rem esse voluptate eum.</p>
-    </div>
-    <div class="v-tab-pane" id="v-tab2">
-      <h3>Tab 2 content</h3>
-      <p>Phasellus in tellus consequat, hendrerit nisi eu, molestie nunc. Suspendisse nec ipsum sed mi placerat dapibus id vel purus. Donec in mauris id nulla dignissim euismod.</p>
-    </div>
-    <div class="v-tab-pane" id="v-tab3">
-      <h3>Tab 3 content</h3>
-      <p>Sed vel mi vel eros semper bibendum. Curabitur eget libero non enim blandit aliquam ac ac risus. Ut varius augue vel sollicitudin suscipit.</p>
-    </div>
-    <div class="v-tab-pane" id="v-tab4">
-      <h3>Tab 4 content</h3>
-      <p>Esemper bibendum. Curabitur eget libero non enim blandit aliquam ac ac risus. Ut varius augue vel sollicitudin suscipit.</p>
-    </div>
-  </div> <!-- .v-tab-content -->
-</div>  <!-- .vertical-tabs-container -->
-  
-
-  
-
-
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

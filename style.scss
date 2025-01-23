@@ -1,31 +1,37 @@
-*, *::after, *::before {
+// <weight>: Use a value from 300 to 900
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 body {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
   padding: 0;
   margin: 60px 15px; //for development only (not for production)
-  background-color: #E9EBEC;
-  font-family: Verdana, Geneva, sans-serif;
+  background-color: #e9ebec;
 }
-
 
 // horizontal
 .tabs-container {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #d2d2d2;
   color: #222222;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   .tab-nav {
     padding: 0;
     margin: 0;
     list-style: none;
-    background-color: #E9EBEC;
+    background-color: #e9ebec;
     display: flex;
     flex-direction: column;
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       flex-direction: row;
     }
     li {
@@ -35,20 +41,20 @@ body {
       }
       a {
         color: #555;
-        font-size: 16px;
+        font-size: 1.2em;
         font-weight: 500;
         text-decoration: none;
         padding: 15px 30px;
         border-right: 1px solid #d2d2d2;
         display: block;
         width: 100%;
-        @media(min-width: 768px) {
+        @media (min-width: 768px) {
           display: inline-block;
         }
         &.active {
-          color: #0D054C;
+          color: #0d054c;
           font-weight: 700;
-          background-color: #FFFFFF;
+          background-color: #ffffff;
           border: 1px solid transparent;
         }
       }
@@ -66,27 +72,25 @@ body {
   }
 }
 
-
-
 // vertical
 .vertical-tabs-container {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #d2d2d2;
   color: #222222;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
   .v-tab-nav {
     flex-basis: 100%;
     margin-right: 10px;
-    background-color: #E9EBEC;
-    @media(min-width: 768px) {
+    background-color: #e9ebec;
+    @media (min-width: 768px) {
       flex-basis: 30%;
     }
 
@@ -99,7 +103,7 @@ body {
         a {
           color: #222222;
           display: block;
-          font-size: 16px;
+          font-size: 1.2em;
           font-weight: 500;
           padding: 20px 10px;
           border-bottom: 1px solid #d2d2d2;
@@ -109,8 +113,8 @@ body {
             background-color: #d2d3d4;
           }
           &.active {
-            background-color: #FFFFFF;
-            color: #0D054C;
+            background-color: #ffffff;
+            color: #0d054c;
             font-weight: 700;
           }
         }
@@ -122,7 +126,7 @@ body {
   }
   .v-tab-content {
     flex-basis: 100%;
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       flex-basis: 70%;
     }
     .v-tab-pane {
@@ -134,15 +138,6 @@ body {
     }
     .v-tab-pane.active {
       display: block;
-    }    
+    }
   }
 }
-
-
-
-
-
-
-
-
-
